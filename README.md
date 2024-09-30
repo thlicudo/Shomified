@@ -1,6 +1,6 @@
 # SHOMIFIED WEBSITE
 
-Hi! Welcome to my first practice project website I built in HTML, CSS, & Javascript. I made this to improve my Web Development skills especially in Frontend. As I'm making this I also learn something new and can see myself improving as I continue working. This was a fun experience, learning and actually doing and making something I love. Hope you like this one.
+Hi! Welcome to my first practice project website I built in HTML, CSS, & Javascript. I made this to improve my Web Development skills especially in Frontend. As I'm making this I also learn something new and can see myself improving as I continue working. This was a fun experience, learning and actually making something I love. Hope you like this one.
 
 The theme and style of this website is heavily inspired and based in one of the pages in Azuki Website: https://www.azuki.com/beanz
 
