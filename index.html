@@ -1,504 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Shomified</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/style.css" />
-  <title>Shomified</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="nav-logo">
-        <a href="#intro-part">
-          <img src="images/logo/logo.png" alt="intro logo" />
-        </a>
-      </div>
-
-      <div class="nav-links">
-        <a href="#intro-part">home</a>
-        <a href="#about-part">about</a>
-        <a href="#friends-part">friends</a>
-        <a href="#gallery-part">gallery</a>
-      </div>
-
-      <div class="nav-burger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </nav>
-  </header>
-
-  <section class="intro-part" id="intro-part">
-    <div class="intro-logo">
-      <img src="images/logo/logo.png" alt="" />
-    </div>
-
-    <div class="intro-friends-wrapper">
-      <div class="intro-friends-container" style="z-index: 5">
-        <div style="z-index: 3; transform: none">
-          <div class="intro-friends-box">
-            <div class="overlay" style="transform: translateY(4vw)">
-              Ivan
-            </div>
-            <img src="images/friends/ivan.gif" alt="" />
-          </div>
-        </div>
-        <div style="z-index: 1; transform: translateY(-1.5rem)">
-          <div class="intro-friends-box" style="z-index: 2">
-            <div class="overlay" style="transform: translateY(-1vw)">Shane</div>
-            <img src="images/friends/shane.gif" alt="" />
-          </div>
-        </div>
-        <div style="z-index: 2; transform: none">
-          <div class="intro-friends-box">
-            <div class="overlay" style="transform: translateY(4vw)">
-              Bim
-            </div>
-            <img src="images/friends/bim.gif" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="intro-friends-container" style="z-index: 4">
-        <div style="z-index: 2; transform: none">
-          <div class="intro-friends-box">
-            <div class="overlay" style="transform: translateY(2vw)">Cheng</div>
-            <img src="images/friends/cheng.gif" alt="" />
-          </div>
-        </div>
-        <div style="z-index: 1; transform: translateY(-1.5rem)">
-          <div class="intro-friends-box">
-            <div class="overlay" style="transform: translateY(4vw)">
-              Kuys
-            </div>
-            <img src="images/friends/kuys.gif" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-part" id="about-part">
-    <div class="heading-desc-wrapper">
-      <div class="about-heading">hello!</div>
-
-      <div class="about-description">
-        <p>
-          I'm <span style="color: #00adb5">Tom Harvey Licudo.</span> I studied
-          <span style="color: #00adb5">Computer Science</span> at the
-          <span style="color: #00adb5">Pamantasan ng Lungsod ng Maynila.</span>
-        </p>
-        <br />
-        <p>
-          I'm currently exploring and improving my skills in
-          <span style="color: #00adb5">Web Development</span> particularly in
-          <span style="color: #00adb5">Frontend Design.</span>
-        </p>
-        <br />
-        <p>
-          This is one of my project website that I worked on
-          where I feature my <span style="color: #00adb5">friends</span> and
-          my <span style="color: #00adb5"> pixel-art works.</span>
-        </p>
-        <br />
-        <p>
-          This website is built in
-          <span style="color: #00adb5">HTML, CSS</span> &
-          <span style="color: #00adb5">Javascript.</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="about-img-wrapper">
-      <div class="about-img-container">
-        <img src="images/shom.gif" alt="" />
-      </div>
-    </div>
-  </section>
-
-  <section class="friends-part" id="friends-part">
-    <div class="friends-heading">meet the friends</div>
-
-    <div class="friends-wrapper">
-      <div class="friends-img-info-wrapper">
-        <div class="friends-img-box">
-          <img src="" alt="" />
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="#intro-part">
+            <img src="/images/logo/logo.png" alt="intro logo" />
+          </a>
         </div>
 
-        <div class="friends-info-container">
-          <div class="friends-nickname">
-            <span id="friends-nickname"></span>
-          </div>
-          <div class="friends-type">
-            <span id="friends-type"></span>
-          </div>
-          <div class="friends-description">
-            <span id="friends-description"></span>
-          </div>
+        <div class="nav-links">
+          <a href="#intro-part">home</a>
+          <a href="#about-part">about</a>
+          <a href="#friends-part">friends</a>
+          <a href="#gallery-part">gallery</a>
         </div>
+
+        <div class="nav-burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="intro-part" id="intro-part">
+      <div class="intro-logo">
+        <img src="/images/logo/logo.png" alt="" />
       </div>
 
-      <div class="friends-nav-wrapper">
-        <div class="friends-nav-container">
-          <div class="friends-avatar-box" data-id="ivan">
-            <div class="avatar-wrapper">
-              <h1>ivan</h1>
-              <img src="images/avatar/ivan.png" alt="-avatar" />
+      <div class="intro-friends-wrapper">
+        <div class="intro-friends-container" style="z-index: 5">
+          <div style="z-index: 3; transform: none">
+            <div class="intro-friends-box">
+              <div class="overlay" style="transform: translateY(4vw)">Ivan</div>
+              <img src="/images/friends/ivan.gif" alt="" />
             </div>
           </div>
-
-          <div class="friends-avatar-box" data-id="shane">
-            <div class="avatar-wrapper">
-              <h1>shane</h1>
-              <img src="images/avatar/shane.png" alt="-avatar" />
+          <div style="z-index: 1; transform: translateY(-1.5rem)">
+            <div class="intro-friends-box" style="z-index: 2">
+              <div class="overlay" style="transform: translateY(-1vw)">
+                Shane
+              </div>
+              <img src="/images/friends/shane.gif" alt="" />
             </div>
           </div>
-
-          <div class="friends-avatar-box" data-id="bim">
-            <div class="avatar-wrapper">
-              <h1>bim</h1>
-              <img src="images/avatar/bim.png" alt="-avatar" />
+          <div style="z-index: 2; transform: none">
+            <div class="intro-friends-box">
+              <div class="overlay" style="transform: translateY(4vw)">Bim</div>
+              <img src="/images/friends/bim.gif" alt="" />
             </div>
           </div>
+        </div>
 
-          <div class="friends-avatar-box" data-id="cheng">
-            <div class="avatar-wrapper">
-              <h1>cheng</h1>
-              <img src="images/avatar/cheng.png" alt="-avatar" />
+        <div class="intro-friends-container" style="z-index: 4">
+          <div style="z-index: 2; transform: none">
+            <div class="intro-friends-box">
+              <div class="overlay" style="transform: translateY(2vw)">
+                Cheng
+              </div>
+              <img src="/images/friends/cheng.gif" alt="" />
             </div>
           </div>
-
-          <div class="friends-avatar-box" data-id="kuys">
-            <div class="avatar-wrapper">
-              <h1>kuys</h1>
-              <img src="images/avatar/kuys.png" alt="-avatar" />
+          <div style="z-index: 1; transform: translateY(-1.5rem)">
+            <div class="intro-friends-box">
+              <div class="overlay" style="transform: translateY(4vw)">Kuys</div>
+              <img src="/images/friends/kuys.gif" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="gallery-part" id="gallery-part">
-    <div class="gallery-heading">gallery</div>
+    <section class="about-part" id="about-part">
+      <div class="heading-desc-wrapper">
+        <div class="about-heading">hello!</div>
 
-    <div class="gallery-wrapper">
+        <div class="about-description">
+          <p>
+            I'm <span style="color: #00adb5">Tom Harvey Licudo.</span> I studied
+            <span style="color: #00adb5">Computer Science</span> at the
+            <span style="color: #00adb5"
+              >Pamantasan ng Lungsod ng Maynila.</span
+            >
+          </p>
+          <br />
+          <p>
+            I'm currently exploring and improving my skills in
+            <span style="color: #00adb5">Web Development</span> particularly in
+            <span style="color: #00adb5">Frontend Design.</span>
+          </p>
+          <br />
+          <p>
+            This is one of my project website that I worked on where I feature
+            my <span style="color: #00adb5">friends</span> and my
+            <span style="color: #00adb5"> pixel-art works.</span>
+          </p>
+          <br />
+          <p>
+            This website is built in
+            <span style="color: #00adb5">HTML, CSS</span> &
+            <span style="color: #00adb5">Javascript.</span>
+          </p>
+        </div>
+      </div>
 
-      <button class="item" id="item-1">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Cheng B-day Gift.gif" alt="" />
+      <div class="about-img-wrapper">
+        <div class="about-img-container">
+          <img src="/images/shom.gif" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="friends-part" id="friends-part">
+      <div class="friends-heading">meet the friends</div>
+
+      <div class="friends-wrapper">
+        <div class="friends-img-info-wrapper">
+          <div class="friends-img-box">
+            <img src="" alt="" />
+          </div>
+
+          <div class="friends-info-container">
+            <div class="friends-nickname">
+              <span id="friends-nickname"></span>
+            </div>
+            <div class="friends-type">
+              <span id="friends-type"></span>
+            </div>
+            <div class="friends-description">
+              <span id="friends-description"></span>
+            </div>
           </div>
         </div>
-        <div class="gallery-img-overlay">
-          Cheng's B-day Gift
-        </div>
-      </button>
 
-      <button class="item" id="item-2">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Ivan B-day Gift (alt).gif" alt="" />
+        <div class="friends-nav-wrapper">
+          <div class="friends-nav-container">
+            <div class="friends-avatar-box" data-id="ivan">
+              <div class="avatar-wrapper">
+                <h1>ivan</h1>
+                <img src="/images/avatar/ivan.png" alt="-avatar" />
+              </div>
+            </div>
+
+            <div class="friends-avatar-box" data-id="shane">
+              <div class="avatar-wrapper">
+                <h1>shane</h1>
+                <img src="/images/avatar/shane.png" alt="-avatar" />
+              </div>
+            </div>
+
+            <div class="friends-avatar-box" data-id="bim">
+              <div class="avatar-wrapper">
+                <h1>bim</h1>
+                <img src="/images/avatar/bim.png" alt="-avatar" />
+              </div>
+            </div>
+
+            <div class="friends-avatar-box" data-id="cheng">
+              <div class="avatar-wrapper">
+                <h1>cheng</h1>
+                <img src="/images/avatar/cheng.png" alt="-avatar" />
+              </div>
+            </div>
+
+            <div class="friends-avatar-box" data-id="kuys">
+              <div class="avatar-wrapper">
+                <h1>kuys</h1>
+                <img src="/images/avatar/kuys.png" alt="-avatar" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="gallery-img-overlay">
-          Ivan's B-day Gift
-        </div>
-      </button>
+      </div>
+    </section>
 
-      <button class="item" id="item-3">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Ate Shane B-day Gift.gif" alt="" />
+    <section class="gallery-part" id="gallery-part">
+      <div class="gallery-heading">gallery</div>
+
+      <div class="gallery-wrapper">
+        <button class="item" id="item-1">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Cheng B-day Gift.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          Ate Shane's B-day Gift
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Cheng's B-day Gift</div>
+        </button>
 
-      <button class="item" id="item-4">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Bim B-day Gift.gif" alt="" />
+        <button class="item" id="item-2">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Ivan B-day Gift (alt).gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          Bim's B-day Gift
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Ivan's B-day Gift</div>
+        </button>
 
-      <button class="item" id="item-5">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Kuys B-day Gift.gif" alt="" />
+        <button class="item" id="item-3">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Ate Shane B-day Gift.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          Kuys' B-day Gift
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Ate Shane's B-day Gift</div>
+        </button>
 
-      <button class="item" id="item-6">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/First-animation.gif" alt="" />
+        <button class="item" id="item-4">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Bim B-day Gift.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          My first animation
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Bim's B-day Gift</div>
+        </button>
 
-      <button class="item" id="item-7">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Aang with Rasengan.gif" alt="" />
+        <button class="item" id="item-5">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Kuys B-day Gift.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          aang with rasengan
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Kuys' B-day Gift</div>
+        </button>
 
-      <button class="item" id="item-8">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Head.gif" alt="" />
+        <button class="item" id="item-6">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/First-animation.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          head ver. 1
-        </div>
-      </button>
+          <div class="gallery-img-overlay">My first animation</div>
+        </button>
 
-      <button class="item" id="item-9">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/body1.gif" alt="" />
+        <button class="item" id="item-7">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="images/gallery/Aang with Rasengan.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          body ver. 2 (alt)
-        </div>
-      </button>
+          <div class="gallery-img-overlay">aang with rasengan</div>
+        </button>
 
-      <button class="item" id="item-10">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Leg.gif" alt="" />
+        <button class="item" id="item-8">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Head.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          leg ver. 1
-        </div>
-      </button>
+          <div class="gallery-img-overlay">head ver. 1</div>
+        </button>
 
-      <button class="item" id="item-11">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Marvel Characters (Megaman Reference).gif" alt="" />
+        <button class="item" id="item-9">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/body1.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          marvel characters (megaman sprite)
-        </div>
-      </button>
+          <div class="gallery-img-overlay">body ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-12">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Concept-art 1.png" alt="" />
+        <button class="item" id="item-10">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Leg.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          concept art
-        </div>
-      </button>
+          <div class="gallery-img-overlay">leg ver. 1</div>
+        </button>
 
-      <button class="item" id="item-13">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/head3.gif" alt="" />
+        <button class="item" id="item-11">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img
+                src="/images/gallery/Marvel Characters (Megaman Reference).gif"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          head ver. 2 (alt)
-        </div>
-      </button>
-
-      <button class="item" id="item-14">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/arm-ver-2.gif" alt="" />
+          <div class="gallery-img-overlay">
+            marvel characters (megaman sprite)
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          arm ver. 2 (alt)
-        </div>
-      </button>
+        </button>
 
-      <button class="item" id="item-15">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Arm.gif" alt="" />
+        <button class="item" id="item-12">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Concept-art 1.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          arm ver. 1
-        </div>
-      </button>
-      <button class="item" id="item-16">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/head2.gif" alt="" />
+          <div class="gallery-img-overlay">concept art</div>
+        </button>
+
+        <button class="item" id="item-13">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/head3.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          head ver. 2 (alt)
-        </div>
-      </button>
+          <div class="gallery-img-overlay">head ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-17">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/body-ver-2 (solo).gif" alt="" />
+        <button class="item" id="item-14">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/arm-ver-2.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          body ver. 2 (alt)
-        </div>
-      </button>
+          <div class="gallery-img-overlay">arm ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-18">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/head1.gif" alt="" />
+        <button class="item" id="item-15">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Arm.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          head ver. 2
-        </div>
-      </button>
-
-      <button class="item" id="item-19">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Pokemon Style (Top-down approach).png" alt="" />
+          <div class="gallery-img-overlay">arm ver. 1</div>
+        </button>
+        <button class="item" id="item-16">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/head2.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          pokemon style room
-        </div>
-      </button>
+          <div class="gallery-img-overlay">head ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-20">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/leg-ver-2.gif" alt="" />
+        <button class="item" id="item-17">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/body-ver-2 (solo).gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          leg ver. 2 (alt)
-        </div>
-      </button>
+          <div class="gallery-img-overlay">body ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-21">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Monkey D Luffy ver-2 (32x32).png" alt="" />
+        <button class="item" id="item-18">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/head1.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          Luffy Art
-        </div>
-      </button>
+          <div class="gallery-img-overlay">head ver. 2</div>
+        </button>
 
-      <button class="item" id="item-22">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/body2.gif" alt="" />
+        <button class="item" id="item-19">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img
+                src="/images/gallery/Pokemon Style (Top-down approach).png"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          body ver.2
-        </div>
-      </button>
+          <div class="gallery-img-overlay">pokemon style room</div>
+        </button>
 
-      <button class="item" id="item-23">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/character concept.gif" alt="" />
+        <button class="item" id="item-20">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/leg-ver-2.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          character concept with idle animation
-        </div>
-      </button>
+          <div class="gallery-img-overlay">leg ver. 2 (alt)</div>
+        </button>
 
-      <button class="item" id="item-24">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Concept-art.png" alt="" />
+        <button class="item" id="item-21">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img
+                src="/images/gallery/Monkey D Luffy ver-2 (32x32).png"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          concept art sketch
-        </div>
-      </button>
+          <div class="gallery-img-overlay">Luffy Art</div>
+        </button>
 
-      <button class="item" id="item-25">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Body.gif" alt="" />
+        <button class="item" id="item-22">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/body2.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          body ver. 1
-        </div>
-      </button>
+          <div class="gallery-img-overlay">body ver.2</div>
+        </button>
 
-      <button class="item" id="item-26">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/Ivan.png" alt="" />
+        <button class="item" id="item-23">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/character concept.gif" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          ivan sprites
-        </div>
-      </button>
-
-      <button class="item" id="item-27">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/arm1.gif" alt="" />
+          <div class="gallery-img-overlay">
+            character concept with idle animation
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          arm ver.2
-        </div>
-      </button>
+        </button>
 
-      <button class="item" id="item-28">
-        <div class="gallery-img-container">
-          <div class="gallery-img-box">
-            <img src="images/gallery/leg1.gif" alt="" />
+        <button class="item" id="item-24">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Concept-art.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="gallery-img-overlay">
-          leg ver. 2
-        </div>
-      </button>
+          <div class="gallery-img-overlay">concept art sketch</div>
+        </button>
 
-    </div>
-  </section>
+        <button class="item" id="item-25">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Body.gif" alt="" />
+            </div>
+          </div>
+          <div class="gallery-img-overlay">body ver. 1</div>
+        </button>
 
-  <script src="/src/script.js"></script>
-</body>
+        <button class="item" id="item-26">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/Ivan.png" alt="" />
+            </div>
+          </div>
+          <div class="gallery-img-overlay">ivan sprites</div>
+        </button>
 
+        <button class="item" id="item-27">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/arm1.gif" alt="" />
+            </div>
+          </div>
+          <div class="gallery-img-overlay">arm ver.2</div>
+        </button>
+
+        <button class="item" id="item-28">
+          <div class="gallery-img-container">
+            <div class="gallery-img-box">
+              <img src="/images/gallery/leg1.gif" alt="" />
+            </div>
+          </div>
+          <div class="gallery-img-overlay">leg ver. 2</div>
+        </button>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
